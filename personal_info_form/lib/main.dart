@@ -21,13 +21,12 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: Color.fromARGB(255, 235, 111, 252),
+        backgroundColor: Colors.red[400],
         title: Text("Software Engineering Department"),
       ),
       body: SingleChildScrollView(
@@ -65,7 +64,7 @@ class MyHomePage extends StatelessWidget {
                 SizedBox(
                   height: 15,
                 ),
-                Image.asset("assets/avatar.png"),
+                Image.asset('assets/avatar.png'),
                 SizedBox(
                   height: 40,
                 ),
@@ -78,7 +77,7 @@ class MyHomePage extends StatelessWidget {
                     height: 50,
                     child: Center(child: Text("send")),
                     decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 235, 111, 252),
+                        color: Colors.red[400],
                         borderRadius: BorderRadius.circular(25)),
                   ),
                 )
